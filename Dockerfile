@@ -121,8 +121,8 @@ RUN \
  mv /etc/fail2ban/action.d /defaults/fail2ban/ && \
  mv /etc/fail2ban/filter.d /defaults/fail2ban/ && \
  
- #echo "**** copy proxy confs to /default ****" && \
- #mkdir -p /defaults/proxy-confs && \
+echo "**** create proxy-confs directory ****" && \
+mkdir -p /defaults/proxy-confs && \
  #curl -o \
 #	/tmp/proxy.tar.gz -L \
 #	"https://github.com/linuxserver/reverse-proxy-confs/tarball/master" && \
